@@ -1,28 +1,13 @@
-class Main {
+public class AlphabetPattern {
     public static void main(String[] args) {
-        int i;
-        int j;
-        String[] arr={"A","B","C","D","E"};
-      
-try
-{
-        for (i = 1; i <6; i++)
-        {
-          for(j=0;j<i;j++)
-          {
-               System.out.print(arr[j]);
-               
-            
-          }
-            System.out.println(" ");
-            
+        int n = 5; // Number of rows
+
+        for (int i = 1; i <= n; i++) { 
+            for (int j = 0; j < i; j++) { 
+                System.out.print((char) ('A' + j));
+            }
+            System.out.println(); 
+        }
+    }
 }
-}
-catch(java.lang.ArrayIndexOutOfBoundsException e) 
-{
-System.out.println("Fix the Condition");
-}
-          
-           
-}
-}
+
